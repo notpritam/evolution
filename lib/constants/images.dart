@@ -2,6 +2,7 @@ final String allIcon = "assets/images/dashboards.png";
 final String shoeIcon = "assets/images/shoe.png";
 final String watchIcon = "assets/images/watch.png";
 final String tshirtIcon = "assets/images/tshirt.png";
+final String logo = "assets/images/logo.png";
 
 List imagesList = [
   'https://contents.mediadecathlon.com/p2155510/2d4c941c14f1be10172d8977107329a6/p2155510.jpg?format=auto&quality=70&f=650x0',

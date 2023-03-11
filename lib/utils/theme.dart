@@ -1,8 +1,7 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 
 final TextStyle drawwerText = TextStyle(fontSize: 16, color: Colors.white);
+final TextStyle headerText = TextStyle(fontSize: 18, color: Colors.black);
 
 final TextStyle chipText = TextStyle(fontSize: 14, color: Colors.grey);
 

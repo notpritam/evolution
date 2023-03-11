@@ -1,4 +1,5 @@
 import 'package:evolution/screen/ProductScreen.dart';
+import 'package:evolution/screen/SearchScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_zoom_drawer/flutter_zoom_drawer.dart';
 
@@ -105,23 +106,32 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: ListView(
                     scrollDirection: Axis.horizontal,
                     children: [
-                      Container(
-                        margin: EdgeInsets.only(top: 10, bottom: 10),
-                        decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(10)),
-                        padding: EdgeInsets.all(10),
-                        child: Row(children: [
-                          Image.asset(
-                            allIcon,
-                            height: 24,
-                            width: 24,
-                          ),
-                          SizedBox(
-                            width: 10,
-                          ),
-                          Text("All", style: chipText),
-                        ]),
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(context, MaterialPageRoute(
+                            builder: (context) {
+                              return SearchScreen();
+                            },
+                          ));
+                        },
+                        child: Container(
+                          margin: EdgeInsets.only(top: 10, bottom: 10),
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(10)),
+                          padding: EdgeInsets.all(10),
+                          child: Row(children: [
+                            Image.asset(
+                              allIcon,
+                              height: 24,
+                              width: 24,
+                            ),
+                            SizedBox(
+                              width: 10,
+                            ),
+                            Text("All", style: chipText),
+                          ]),
+                        ),
                       ),
                       SizedBox(
                         width: 10,
